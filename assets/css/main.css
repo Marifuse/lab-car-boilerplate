@@ -280,11 +280,12 @@ a:hover {
 }
 .botonapp1, .botonapp2 {
   margin-top: 3em;
+  margin-bottom: 2em;
   cursor: pointer;
 }
-.botonapp2 {
-  margin-bottom: 2em;
-}
+/*.botonapp2 {
+  
+}*/
 #bordeBlanco2 {
   border-top: 1px solid white;
 }
