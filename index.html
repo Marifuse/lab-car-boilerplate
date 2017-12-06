@@ -8,9 +8,11 @@
     <title>Lab-var</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/taxi.ico">
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
+  	<!--Barra de Navegación-->
     <header>
       <nav class="navbar navbar-default" id="navegacion">
         <div class="container">
@@ -23,13 +25,15 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <img class="logo1" src="assets/images/logoForma.png">
+                <img class="logo1 hidden-xs" src="assets/images/logoForma.png">
+                <!--Contenido visible sólo en celulares-->
+                <img class="visible-xs" id="Logo1" src="assets/images/logoForma.png"> 
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right" id="lista">
-                  <li class="boton"><a href="#">Viaja<span class="sr-only">(current)</span></a></li>
-                  <li class="boton"><a href="#">Conduce</a></li>
-                  <li class="boton"><a href="#">Iniciar Sesión</a></li>
+                  <li class="boton"><a id="menuBoton" href="#">Viaja<span class="sr-only">(current)</span></a></li>
+                  <li class="boton"><a id="menuBoton" href="#">Conduce</a></li>
+                  <li class="boton"><a id="menuBoton" href="#">Iniciar Sesión</a></li>
                 </ul>
               </div>
             </div>
@@ -37,46 +41,64 @@
         </div> 
       </nav>  
     </header>
+    <!--Portada Principal-->
     <section class="Portada">
     	<div class="container" id="Recuadro">
     		<div class="row">
-        		<div class="col-md-5 col-md-offset-7" id="cuadroPrincipal">
+        		<div class="col-md-5 col-md-offset-7 hidden-xs" id="cuadroPrincipal">
 		          <h1 class="titleCuadro">Disfruta del viaje <br> Eres dueño de tu tiempo</h1>
 		          <h4 class="subtitleCuadro">Viaja con <img class="logoBlanco" src="assets/images/logoBlanco.png"></h4>
 		          <button type="button" class="btn btn-lg btn-default" id="registrar">Regístrate</button>
 		          <hr class="linea1"><span class="letterBlanco">O bien</span><hr class="linea2">
 		          <button type="button" class="btn btn-lg btn-default" id="LargeBTN">Combiértete en Conductor</button>
 		        </div>
+		        <!--Contenido visible sólo en celulares-->
+		         <div class="col-xs-8 col-xs-offset-4 visible-xs" id="cuadroPrincipalOculto">
+		           <h1 class="tituloOculto">Comienza a viajar con <img class="logoBlancoOculto" src="assets/images/logoBlanco.png"></h1>
+		           <button type="button" class="btn btn-lg btn-default" id="LargeBTNoculto">Descarga la App</button>
+		         </div>
 		     </div>
 	    </div>
     </section>
+    <!--Cuadro del celular e información-->
     <section class="segundoRecuadro">
     	<div class="container" id="CuadroCelular">
     		<div class="row">
     			<div class="col-xs-12 col-sm-4 col-md-4" id="contenedorcelular">
-    				<img class="celular" src="assets/images/iPhone6Plus.png">
+    				<h3 class="tituloapp1oculto visible-xs">Descarga la Nueva App</h3><!--Contenido visible sólo en celulares-->
+    				<img class="celular hidden-xs" src="assets/images/iPhone6Plus.png">
+    				<img class="celular1 visible-xs" src="assets/images/iPhone6Plus.png"><!--Contenido visible sólo en celulares-->
+    				<p class="parrafoapp2oculto visible-xs">Llega a tu destino aún más rápido</p><!--Contenido visible sólo en celulares-->
     			</div>
-    			<div class="col-xs-hidden col-sm-8 col-md-8" id="contenedortextocelular">
-    				<h3 class="tituloapp">Descarga la Nueva App</h3>
-    				<p class="parrafoapp1">La versión actualizada de LabCar está llena de nuevas funciones para 
+    			<div class="col-sm-8 col-md-8" id="contenedortextocelular">
+    				<h3 class="tituloapp hidden-xs">Descarga la Nueva App</h3>
+    				<p class="parrafoapp1 hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para 
     				llegar a donde quieras aún más fácil y rápido.</p>
-    				<p class="parrafoapp2">Con un sólo botón, un auto llega justo a tu ubicación. Súbete y no
-    				te preocupes: Tu conductor sabe exactamente a donde ir. </p>
+    				<p class="parrafoapp2 hidden-xs">Con un sólo botón, un auto llega justo a tu ubicación. Súbete y no
+    				te preocupes: Tu conductor sabe exactamente a donde ir.</p>
     			</div>
     		</div>
     	</div>
     </section>
+    <!--Cuadro información conductor-->
     <section class="tercerRecuadro">
     	<div class="container" id="CuadroConductor">
     		<div class="row">
-    			<div class="col-md-5 col-md-offset-7" id="contenedortextoconductor">
+    			<div class="col-md-5 col-md-offset-7 hidden-xs" id="contenedortextoconductor">
     				<h3 class="tituloconduc">Conduce cuando quieras</h3>
     				<p class="parrafoconduc">LabCar es una opción flexible para alcanzar tus metas financieras</p>
     				<button type="button" class="btn btn-lg btn-warning" id="botonconduc">Conviértete en Conductor</button>
     			</div>
+    			<!--Contenido visible sólo en celulares-->
+    			<div class="col-xs-12 visible-xs" id="contenedortextoconductor">
+    				<h3 class="tituloconduc">Conduce cuando quieras</h3>
+    				<p class="parrafoconduc">LabCar es una opción flexible para alcanzar tus metas financieras</p>
+    				<button type="button" class="btn btn-lg btn-warning" id="botonconducOculto">Conviértete en Conductor</button>
+    			</div>
     		</div>
     	</div>
     </section>
+    <!--Cuadro del Mapa-->
     <section class="cuartoRecuadro">
     	<div class="container">
     		<div class="row">
@@ -86,7 +108,9 @@
     				<img class="iconopunto" src="assets/images/shape.png"><input class="inputpartida" type="text" name="Punto de partida" placeholder="Ingrese su punto de Partida">
     				<br>
     				<img class="iconocohete" src="assets/images/shape2.png"><input class="inputdestino" type="text" name="Destino" placeholder="Ingrese su Destino"> 
-    				<button type="button" class="btn btn-lg btn-default" id="botonviaje">¡Trazar Ruta!</button>
+    				<button type="button" class="btn btn-lg btn-default hidden-xs" id="botonviaje">¡Trazar Ruta!</button>
+    				<!--Contenido visible sólo en celulares-->
+    				<button type="button" class="btn btn-lg btn-default visible-xs" id="botonviajeOculto">¡Trazar Ruta!</button>
     			</div>
     			<div class="col-md-6" id="cuadromapa">
     				<iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26642.33556544565!2d-70.64922351779785!3d-33.4156322272526!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512502540925" width="530" height="410" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -94,9 +118,64 @@
     		</div>
     	</div>
     </section>
+    <!--Cierre de la página-->
+    <footer class="Cierre">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12" id="bordeBlanco1">
+    				<img class="logoBlancoFinal" src="assets/images/logoBlanco.png">
+    		    </div>
+    		</div>
+    		<div class="row">
+    		  <div class="col-md-3 hidden-xs">
+    			<i class="fa fa-facebook" aria-hidden="true"></i>
+    			<i class="fa fa-twitter" aria-hidden="true"></i>
+    			<i class="fa fa-linkedin" aria-hidden="true"></i>
+    			<i class="fa fa-apple" aria-hidden="true"></i>
+    			<i class="fa fa-play" aria-hidden="true"></i>
+    		  </div>
+    		  <!--Contenido visible sólo en celulares-->
+    		  <div class="col-md-3 visible-xs">
+    			<i id="icons" class="fa fa-facebook" aria-hidden="true"></i>
+    			<i id="icons" class="fa fa-twitter" aria-hidden="true"></i>
+    			<i id="icons" class="fa fa-linkedin" aria-hidden="true"></i>
+    			<i id="icons" class="fa fa-apple" aria-hidden="true"></i>
+    			<i id="icons" class="fa fa-play" aria-hidden="true"></i>
+    		  </div>
+    		  <div class="col-md-3">
+    			<h6><a href="#">Viaja</a></h6>
+    			<h6><a href="#">Conduce</a></h6>
+    			<h6><a href="#">Ciudades</a></h6>
+    			<h6><a href="#">Entregas</a></h6>
+    			<h6><a href="#">¿Cómo funciona?</a></h6>
+    			<h6><a href="#">Países</a></h6>
+    			<h6><a href="#">Seguridad</a></h6>
+    		  </div>
+    		  <div class="col-md-3 hidden-xs">
+    			<h6><a href="#">Oportunidades</a></h6>
+    			<h6><a href="#">Nuestra Historia</a></h6>
+    			<h6><a href="#">App de LabCar</a></h6>
+    			<h6><a href="#">Eventos</a></h6>
+    			<h6><a href="#">Desarrolladores</a></h6>
+    			<h6><a href="#">Servicios</a></h6>
+    			<h6><a href="#">Laboratoria</a></h6>
+    			<h6><a href="#">Coders</a></h6>
+    		  </div>
+    		  <div class="col-md-3">
+    			<img class="botonapp1" src="assets/images/appstore.png">
+    			<img class="botonapp2" src="assets/images/enBadgeWebGeneric.png">
+    		  </div>
+    	    </div>
+    	    <div class="row">
+    	    	<div class="col-md-12" id="bordeBlanco2">
+    	    		<h6 class="copyright">© 2017 LabCar Technologies Inc.</h6>
+    	    	</div>
+    	    </div>
+    	</div>	  
+    </footer>
+
     <!--Enlaces JS-->
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
-

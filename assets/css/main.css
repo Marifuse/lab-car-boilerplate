@@ -10,10 +10,22 @@ body{
   margin: 0;
 }
 .logo1 {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .boton {
   margin-left: 2em;
+  text-align: center;
+}
+#menuBoton:hover {
+  color: #FFBF00;
+  transition: 1s;
+}
+/*Menú versión movil*/
+#Logo1 {
+  margin-top: 0.5em;
+}
+#iconbutton {
+  transition: 1s;
 }
 
 /*Imagen principal*/
@@ -48,6 +60,7 @@ body{
 #registrar {
   display: block;
   margin-bottom: 1em;
+  transition: 1s;
 }
 .linea1, .linea2 {
   width: 30%;
@@ -66,6 +79,24 @@ body{
 #LargeBTN {
   margin-top: 1em;
   margin-bottom: 2em;
+  transition: 1s;
+}
+/*Cuadro principal versión movil*/
+#cuadroPrincipalOculto {
+  background-color: #FFBF00;
+  padding: 2em;
+  margin-top: 20rem;
+}
+.tituloOculto {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+.logoBlancoOculto {
+  width: 32%;
+}
+#LargeBTNoculto {
+  transition: 1s;
 }
 
 /*Cuadro del Celular y Parrafos*/
@@ -80,7 +111,7 @@ body{
   margin-bottom: 5em;
 }
 .celular {
-  width: 100%;
+  max-width: 100%;
 }
 #contenedortextocelular {
   max-width: 50%;
@@ -99,6 +130,24 @@ body{
 }
 .parrafoapp1, .parrafoapp2 {
   font-size: 1.6em;
+}
+/*Celular versión movil*/
+.tituloapp1oculto {
+  color: white;
+  text-align: center;
+  margin-top: -2em;
+  margin-bottom: 1em;
+}
+.celular1 {
+  max-width: 100%;
+  padding: 1em;
+  border: 1px solid white;
+}
+.parrafoapp2oculto {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 2em;
+  text-align: center;
 }
 
 /*Tercer recuadro con imagen de fondo y cuadro de información*/
@@ -129,7 +178,13 @@ body{
   padding-bottom: 0.5em;
 }
 #botonconduc {
-  margin-bottom: 3.5em;
+  margin-bottom: 8.8em;
+  transition: 1s;
+}
+/*Boton conductor versión movil*/
+#botonconducOculto {
+  margin-bottom: 4.2em;
+  transition: 1s;
 }
 
 /*Recuadro del mapa*/
@@ -177,6 +232,7 @@ body{
   margin-left: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  transition: 1s;
 }
 #cuadromapa {
   padding: 2em;
@@ -185,5 +241,61 @@ body{
 .mapa {
   max-width: 100%;
 }
+/*Boton mapa versión movil*/
+#botonviajeOculto {
+  margin-left: 5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  transition: 1s;
+}
 
 /*Footer*/
+.Cierre {
+  background-color: #424242;
+}
+#bordeBlanco1 {
+  border-bottom: 1px solid white;
+}
+.logoBlancoFinal {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-apple, .fa-play {
+  color: white;
+  cursor: pointer;
+  padding: 0.2em;
+  margin-top: 15em;
+}
+h6 {
+  margin-top: 1.5em;
+}
+a {
+  color: white;
+  margin-top: 1em;
+}
+a:hover {
+  color: #FFBF00;
+  text-decoration: none;
+  transition: 1s;
+}
+.botonapp1, .botonapp2 {
+  margin-top: 3em;
+  cursor: pointer;
+}
+.botonapp2 {
+  margin-bottom: 2em;
+}
+#bordeBlanco2 {
+  border-top: 1px solid white;
+}
+.copyright {
+  color: white;
+  margin-bottom: 5em;
+}
+/*Icons versión movil*/
+#icons {
+  color: white;
+  cursor: pointer;
+  padding: 0.2em;
+  margin-top: 1em;
+}
