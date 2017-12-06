@@ -17,7 +17,7 @@
       <nav class="navbar navbar-default" id="navegacion">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-md-12 col-lg-12">
               <div class="navbar-header">
                 <button  id="iconbutton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -26,8 +26,7 @@
                   <span class="icon-bar"></span>
                 </button>
                 <img class="logo1 hidden-xs" src="assets/images/logoForma.png">
-                <!--Contenido visible sólo en celulares-->
-                <img class="visible-xs" id="Logo1" src="assets/images/logoForma.png"> 
+                <img class="visible-xs" id="Logo1" src="assets/images/logoForma.png"><!--Contenido visible sólo en celulares--> 
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right" id="lista">
@@ -45,7 +44,7 @@
     <section class="Portada">
     	<div class="container" id="Recuadro">
     		<div class="row">
-        		<div class="col-md-5 col-md-offset-7 hidden-xs" id="cuadroPrincipal">
+        		<div class="col-md-5 col-md-offset-7 hidden-xs col-lg-5 col-lg-offset-7" id="cuadroPrincipal">
 		          <h1 class="titleCuadro">Disfruta del viaje <br> Eres dueño de tu tiempo</h1>
 		          <h4 class="subtitleCuadro">Viaja con <img class="logoBlanco" src="assets/images/logoBlanco.png"></h4>
 		          <button type="button" class="btn btn-lg btn-default" id="registrar">Regístrate</button>
@@ -64,13 +63,13 @@
     <section class="segundoRecuadro">
     	<div class="container" id="CuadroCelular">
     		<div class="row">
-    			<div class="col-xs-12 col-sm-4 col-md-4" id="contenedorcelular">
+    			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="contenedorcelular">
     				<h3 class="tituloapp1oculto visible-xs">Descarga la Nueva App</h3><!--Contenido visible sólo en celulares-->
     				<img class="celular hidden-xs" src="assets/images/iPhone6Plus.png">
     				<img class="celular1 visible-xs" src="assets/images/iPhone6Plus.png"><!--Contenido visible sólo en celulares-->
     				<p class="parrafoapp2oculto visible-xs">Llega a tu destino aún más rápido</p><!--Contenido visible sólo en celulares-->
     			</div>
-    			<div class="col-sm-8 col-md-8" id="contenedortextocelular">
+    			<div class="col-sm-8 col-md-8 col-lg-8" id="contenedortextocelular">
     				<h3 class="tituloapp hidden-xs">Descarga la Nueva App</h3>
     				<p class="parrafoapp1 hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para 
     				llegar a donde quieras aún más fácil y rápido.</p>
@@ -84,7 +83,7 @@
     <section class="tercerRecuadro">
     	<div class="container" id="CuadroConductor">
     		<div class="row">
-    			<div class="col-md-5 col-md-offset-7 hidden-xs" id="contenedortextoconductor">
+    			<div class="col-md-5 col-md-offset-7 col-lg-5 col-lg-offset-7 hidden-xs" id="contenedortextoconductor">
     				<h3 class="tituloconduc">Conduce cuando quieras</h3>
     				<p class="parrafoconduc">LabCar es una opción flexible para alcanzar tus metas financieras</p>
     				<button type="button" class="btn btn-lg btn-warning" id="botonconduc">Conviértete en Conductor</button>
@@ -102,7 +101,7 @@
     <section class="cuartoRecuadro">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-6">
+    			<div class="col-md-6 col-lg-6">
     				<h3 class="titulotarifa">Tarifas</h3>
     				<p class="parrafotarifa">Consulta las tarifas LabCar aquí</p>
     				<img class="iconopunto" src="assets/images/shape.png"><input class="inputpartida" type="text" name="Punto de partida" placeholder="Ingrese su punto de Partida">
@@ -122,12 +121,12 @@
     <footer class="Cierre">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-12" id="bordeBlanco1">
+    			<div class="col-md-12 col-lg-12" id="bordeBlanco1">
     				<img class="logoBlancoFinal" src="assets/images/logoBlanco.png">
     		    </div>
     		</div>
     		<div class="row">
-    		  <div class="col-md-3 hidden-xs">
+    		  <div class="col-md-3 col-lg-3 hidden-xs">
     			<i class="fa fa-facebook" aria-hidden="true"></i>
     			<i class="fa fa-twitter" aria-hidden="true"></i>
     			<i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -135,14 +134,14 @@
     			<i class="fa fa-play" aria-hidden="true"></i>
     		  </div>
     		  <!--Contenido visible sólo en celulares-->
-    		  <div class="col-md-3 visible-xs">
+    		  <div class="col-md-3 col-lg-3 visible-xs">
     			<i id="icons" class="fa fa-facebook" aria-hidden="true"></i>
     			<i id="icons" class="fa fa-twitter" aria-hidden="true"></i>
     			<i id="icons" class="fa fa-linkedin" aria-hidden="true"></i>
     			<i id="icons" class="fa fa-apple" aria-hidden="true"></i>
     			<i id="icons" class="fa fa-play" aria-hidden="true"></i>
     		  </div>
-    		  <div class="col-md-3">
+    		  <div class="col-md-3 col-lg-3">
     			<h6><a href="#">Viaja</a></h6>
     			<h6><a href="#">Conduce</a></h6>
     			<h6><a href="#">Ciudades</a></h6>
@@ -151,7 +150,7 @@
     			<h6><a href="#">Países</a></h6>
     			<h6><a href="#">Seguridad</a></h6>
     		  </div>
-    		  <div class="col-md-3 hidden-xs">
+    		  <div class="col-md-3 col-lg-3 hidden-xs">
     			<h6><a href="#">Oportunidades</a></h6>
     			<h6><a href="#">Nuestra Historia</a></h6>
     			<h6><a href="#">App de LabCar</a></h6>
@@ -161,13 +160,13 @@
     			<h6><a href="#">Laboratoria</a></h6>
     			<h6><a href="#">Coders</a></h6>
     		  </div>
-    		  <div class="col-md-3">
+    		  <div class="col-md-3 col-lg-3">
     			<img class="botonapp1" src="assets/images/appstore.png">
     			<img class="botonapp2" src="assets/images/enBadgeWebGeneric.png">
     		  </div>
     	    </div>
     	    <div class="row">
-    	    	<div class="col-md-12" id="bordeBlanco2">
+    	    	<div class="col-md-12 col-lg-12" id="bordeBlanco2">
     	    		<h6 class="copyright">© 2017 LabCar Technologies Inc.</h6>
     	    	</div>
     	    </div>
